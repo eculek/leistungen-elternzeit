@@ -1,0 +1,37 @@
+name: Verbesserungsvorschlag
+description: Vorschlag zur Verbesserung des Elterngeld-Rechners einreichen
+title: "[Vorschlag] "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: bereich
+    attributes:
+      label: Bereich
+      options:
+        - Elterngeld-Berechnung
+        - Wohngeld-Berechnung
+        - Kinderzuschlag
+        - BuT (Bildung und Teilhabe)
+        - Bedienung / Eingaben
+        - Darstellung / Design
+        - Mehrsprachigkeit
+        - Sonstiges
+    validations:
+      required: true
+  - type: textarea
+    id: vorschlag
+    attributes:
+      label: Dein Vorschlag
+    validations:
+      required: true
+  - type: textarea
+    id: begruendung
+    attributes:
+      label: Begruendung (optional)
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Hinweis
+      options:
+        - label: Mir ist bewusst, dass dies ein privates Projekt ist und Aenderungen keine Garantie haben.
+          required: true
